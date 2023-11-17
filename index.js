@@ -1,8 +1,8 @@
-
+// Added all the required modules for the node.index to properly work
 const inquirer = require('inquirer');
 const fs = require('fs');
 const createPage = require('./utils/generateMarkdown.js');
-
+// Created an array of questions based on professional README.md standards
 const questions = [
     {
         type: 'input',
@@ -12,17 +12,17 @@ const questions = [
     {
         type: 'input',
         name: 'description',
-        message: 'How would you describe your project?',
+        message: 'Give a brief description of what this project does.',
     },
     {
         type: 'input',
         name: 'installation',
-        message: 'How do you install your project?',
+        message: 'How does a user install your project?',
     },
     {
         type: 'input',
         name: 'usage',
-        message: 'How does someone use your project?',
+        message: 'What is the use for this project?',
     },
     {
         type: 'list',
@@ -38,10 +38,20 @@ const questions = [
     {
         type: 'input',
         name: 'testing',
-        message: 'How did you test your project?',
+        message: 'How was this project tested?',
+    },
+    {
+        type: 'input',
+        name: 'profile',
+        message: 'What is your GitHub profile?',
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email address?',
     },
 ];
-
+// Created a writeFile
 const writeFile = data => {
     fs.writeFileSync('README.md', data)}
 
