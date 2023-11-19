@@ -51,10 +51,11 @@ const questions = [
         message: 'What is your email address?',
     },
 ];
-// Created a writeFile
+// Used writeFile then WriteFile Sync to ensure that all of the data and file writing are complete before moving on.
 const writeFile = data => {
     fs.writeFileSync('README.md', data)}
 
+// init function that uses promises in the 'questions', then returns them to the createPage with 'answers'.
 function init() {
     inquirer.prompt(questions)
         .then(answers => {

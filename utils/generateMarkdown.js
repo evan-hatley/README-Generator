@@ -1,30 +1,43 @@
-
-// TODO: Create a function to generate markdown for README
+// Template Literals made the format for the markdown file a breeze. The only part I'm struggling with is the badge creator.
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  ## Description
+## Description
+
   ${data.description}
 
-  ## Table of Contents
+## Table of Contents
 
-  ## Installation
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributions](#contributions)
+- [Testing](#testing)
+- [Questions](#questions)
+
+## Installation
+
   ${data.installation}
 
-  ## Usage
-  ${data.usage}
+## Usage
 
-  ## License
-  ${data.license}
+${data.usage}
 
-  ## Contributions
-  ${data.contribution}
+## License
 
-  ## Testing
-  ${data.testing}
+${data.license}
 
-  ## Questions
-  I can be reached by email at ${data.email}, as well as Github at ${data.profile}
+## Contributions
+
+${data.contribution}
+
+## Testing
+
+${data.testing}
+
+## Questions
+
+  I can be reached by email at ${data.email}, as well as Github at ${data.profile}.
 `;
 }
 
