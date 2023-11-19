@@ -2,7 +2,7 @@
 
 ## Description
 
-  This project was created so users can create a professional readme file with proper formatting with just a few prompts. It utilizes node.js and inquierer to power the application.
+  This project was created so users can create a professional readme file with proper formatting with just a few prompts. It utilizes node.js and inquierer to power the application. I  created this project to save time with my own work and to help others with a pre-formatted README.md.
 
 ## Table of Contents
 
@@ -27,7 +27,7 @@ MIT
 
 ## Contributions
 
-I did, wiht the help of inquierer and shields.io.
+I did, with the help of inquierer.
 
 ## Testing
 
